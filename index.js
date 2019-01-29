@@ -226,6 +226,9 @@
         }
       },
       onMouseMove: function (event) {
+        if (this.props.disableReorder) {
+          return;
+        }
         this.handleTouchEvents(event);
 
         var pointer = {
